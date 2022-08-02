@@ -1,0 +1,129 @@
+
+header{
+    display: flex;
+    /* grid-template-columns: auto auto auto;
+    justify-content: space-between; */
+    align-items: center;
+	justify-content: space-between;
+    background: #03a3df;
+}
+header > .top {
+	left: 20px;
+}
+header > .top a.menu_icon span {
+	color: #000;
+	font-size: 70px;
+	padding: 40px;
+	transition: .2s ease;
+}
+header > .top a.menu_icon:hover span {
+	color: #fff;
+}
+.phone{
+    padding:40px;
+}
+nav.menu {
+	width: 300px;
+	min-height: calc(100vh - 121px);
+	background-color: #03a3df;
+	position: absolute;
+	left: -300px;
+	transition: .3s all;
+    z-index: 1;
+}
+nav.menu > a {
+    display: block;
+    padding: 5px;
+    margin: 15px 0 0px 20px;
+    color: #494949;
+    text-transform: uppercase;
+}
+.title-wrapper img{
+    text-align: center;
+    padding: 16%;
+}
+nav{
+    float: left;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.home-wrapper{
+    display: grid;
+}
+.home-wrapper video{
+    grid-column: 1 / span 3;
+}
+.info-blocks{
+    display: inline-flex;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    justify-content: space-evenly;
+}
+.info-blocks section{
+    width: 300px;
+    align-content: center;
+    text-align: center;
+}
+.button-wrapper{
+    display: inline-flex;
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    justify-content: space-evenly;
+}
+.background-image{
+    position:absolute;
+    z-index: -1;
+}
+footer{
+    background-image: url("../images/footerImage.jpg");
+}
+.foot-wrapper{
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.foot-wrapper nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.foot-wrapper nav ul li{
+    padding: 10px;
+}
+.button-wrapper video{
+    width: 300px;
+    height: auto;
+}
+.vid-label{
+    text-align: center;
+
+}
+.menu_show {
+	left: 0!important;
+}
+
+@media screen and (max-width: 425px) {
+	header h1 {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 360px) {
+	nav.menu {
+		width: 100%;
+		left: -100%; 
+	}
+}
+

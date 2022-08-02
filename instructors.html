@@ -4,25 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instructors</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Archery Achademy</title>
 </head>
+<!-- 
+    Author: William Almond 
+    Class: HTML5100
+    Assignment: Lesson 8
+    Date: 8/1/2022
+    Description: This project is the semantic creation of an HTML website for a 'client' without CSS styling.
+
+    All images used in this work are licenced under Creative Commons.
+
+    validator.w3.org shows two errors on the video setting the hight and width. This course suggests doing so in this location,
+    so I believe this to be incorrect.
+    Added 4 videos to index.html 
+    Added a transitioning "hamburger" menu to all pages. 
+-->
 <body>
     <header>
+        <div class="top"><a href="#" class="menu_icon"><span class="material-icons">
+            density_medium
+            </span></a></div>
         <div class="title-wrapper">
-            <img src="images/archeryAcademy-logo-white.png" alt="Achademy logo white">
+            <img src="images/archeryAcademy-logo-white.png" onclick="window.location.href='index.html'" alt="Achademy logo white">
         </div>
-        <p class="phone"></p>
-        <nav>
-            <img src="images/hamburger.png" alt="Menu button">
-            <ul>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="lessons.html">Private Lessons</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
-                <li><a href="non-dis.html">Policy</a></li>
-            </ul>
-        </nav>
+        <div class="phone"><p class="phone">(253)555-1010</p></div>
     </header>
+    <nav class="menu">
+        <!-- <img class="dropbtn" src="images/hamburger.png" alt="Menu button"> -->
+        
+            <a href="classes.html" class="item_menu">Classes</a>
+            <a href="lessons.html" class="item_menu">Private Lessons</a>
+            <a href="about.html" class="item_menu">About</a>
+            <a href="instructors.html" class="item_menu">Instructors</a>
+            <a href="non-dis.html" class="item_menu">Policy</a>
+        
+    </nav>
     <article>
         <h1>Instructors:</h1>
         <div class="instructor-wrapper">
@@ -55,7 +75,7 @@
         </div>
     </article>
     <footer>
-        <img src="images/footerImage.jpg" alt="Background footer">
+        <!-- <img class="background-image" src="images/footerImage.jpg" alt="Background footer"> -->
         <div class="foot-wrapper">
             <img src="images/archeryAcademy-logo-white.png" alt="Achademy logo white">
             <nav>
@@ -72,5 +92,7 @@
         </div>
         
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
