@@ -83,6 +83,41 @@ nav{
     position:absolute;
     z-index: -1;
 }
+.instructor-wrapper {
+    display: grid;
+    row-gap: 50px;
+    padding: 50px;
+    color: white;
+    
+}
+.instructor-wrapper img, h2{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    
+}
+.level{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    color: #ecb722;
+}
+.inst-profiles{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    column-gap: 50px;
+    background-color: #1b447f;
+    
+    
+}
+.bio{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
 footer{
     background-image: url("../images/footerImage.jpg");
 }
