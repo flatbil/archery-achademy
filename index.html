@@ -16,6 +16,14 @@
     Date: 8/1/2022
     Description: This project is the semantic creation of an HTML website for a 'client' without CSS styling.
 
+    Update: 8/8/2022
+    HTML5 100 Assignment 10 
+
+    Added main-content href to all pages to bypass the menu.
+    Contrast for instructor text is 5.21:1 which is acceptable for large text.
+    Updated the alternate descriptions for the videos to describe what is happening in the video.
+
+
     All images used in this work are licenced under Creative Commons.
 
     validator.w3.org shows two errors on the video setting the hight and width. This course suggests doing so in this location,
@@ -27,6 +35,7 @@
      and Info buttons on index.html are now annimated videos.
 -->
 <body>
+    <a href="#main-content" class="skipper">Skip to main content</a>
     <header>
         <div class="top"><a href="#" class="menu_icon"><span class="material-icons">
             density_medium
@@ -46,11 +55,11 @@
             <a href="non-dis.html" class="item_menu">Policy</a>
         
     </nav>
-    <div class="home-wrapper">
+    <div id="main-content" class="home-wrapper">
         <!-- <img src="#" alt="Promo Video or slideshow"> -->
         <video width="100%" height="auto" autoplay muted loop>
             <source src="images/pexels-kampus-production-6540481.mp4" type="video/mp4">
-            Your browser does not support video
+            Your browser does not support video. This video depicts children target practicing with bows.
         </video>
         <div class="info-blocks">
             <section>
@@ -72,21 +81,21 @@
             <div class="video-button">
                 <video class="button-classes" onclick="window.location.href='classes.html'" muted loop onmouseover="this.play();" onmouseout="this.pause();">
                     <source src="images/ClassesVid.mp4"  type="video/mp4">
-                    Classes
+                    Video of a teenage girl practicing archery indoors. 
                 </video>
                 <h2 class="vid-label">Classes</h2>
             </div>
             <div class="video-button">
                 <video class="button-lessons" onclick="window.location.href='lessons.html'" muted loop onmouseover="this.play();" onmouseout="this.pause();">
                     <source src="images/PrivateVid.mp4" type="video/mp4">
-                    Private Lessons
+                    Video of an instructor giving private archery instruction to two young girls.
                 </video>
                 <h2 class="vid-label">Private Lessons</h2>
             </div>
             <div class="video-button">
                 <video class="button-about" onclick="window.location.href='about.html'" muted loop onmouseover="this.play();" onmouseout="this.pause();">
                     <source src="images/AboutVid.mp4" type="video/mp4">
-                    About
+                    Video of five young adults laughing as they walk to the archery range.
                 </video>
                 <h2 class="vid-label">About</h2>
             </div>

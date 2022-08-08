@@ -161,4 +161,11 @@ footer{
 		left: -100%; 
 	}
 }
-
+.skipper {
+    position: relative;
+    left: -10000px;
+    top: auto;
+}
+.skipper:focus{
+    left: 0;
+}
